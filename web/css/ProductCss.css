@@ -1,0 +1,80 @@
+
+.product-description-container {
+    background-color: white;
+    position: relative;
+    border-radius: 17px;
+    padding: 10px;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.product-description-photo {
+    width: 50%;
+    height: 394px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: width 0.8s ease;
+}
+
+.product-description-photo img {
+    width: 100%;
+    z-index: 1;
+}
+
+.product-description-photo:hover {
+    cursor: pointer;
+    width: 70%;
+}
+.product-description-photo:hover~.product-description-text {
+    font-size: 10px;
+}
+
+/*热词*/
+.hot_word {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hot_word a {
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+    padding: 3px;
+    margin-right: 45px;
+
+}
+
+
+.product-action button {
+    padding: 15px 30px; /* 增加内边距，使按钮更大气 */
+    border: none;
+    cursor: pointer;
+
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* 加深阴影 */
+    background-image: linear-gradient(to bottom, #ff7f50, #ff6347);
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.product-action button:hover {
+    opacity: 0.85;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* 更大的悬停阴影 */
+}
+
+.product-action button.buy-now {
+    border-radius: 10px 0 0 10px; /* 增大圆角半径 */
+    background-image: linear-gradient(to bottom, #ff5733, #d6452e); /* 调整立即购买按钮的渐变颜色 */
+    letter-spacing: 1px; /* 增加字母间距 */
+}
+
+.product-action button.add-to-cart {
+    border-radius: 0 10px 10px 0; /* 增大圆角半径 */
+    background-image: linear-gradient(to bottom, #4caf50, #388e3c);
+    letter-spacing: 1px; /* 增加字母间距 */
+}
+.p_descripton{
+    width: 100px; /* 根据你的布局需求调整宽度 */
+    word-wrap: break-word;
+}
