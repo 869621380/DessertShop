@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: DessertShop
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/DessertShopSpring
+    username: root
+    password: root
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
