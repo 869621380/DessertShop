@@ -18,7 +18,7 @@ public class SellerOrder {
     double price;
     String status;
     String paymentStatus;
-    @JsonFormat(pattern = "yyyy-mm-dd hh:mm:ss")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     LocalDateTime createTime;
     String address;
     @JsonIgnore

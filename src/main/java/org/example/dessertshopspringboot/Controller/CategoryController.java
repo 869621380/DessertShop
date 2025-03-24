@@ -29,18 +29,18 @@ public class CategoryController {
 //    }
 
     @RequestMapping("/getCategory")
-    public Category getCategory(int id)
+    public Result getCategory(int id)
     {
-        return categoryService.getCategory(id);
+        return Result.success(categoryService.getCategory(id)) ;
     }
     @RequestMapping("/getCategoryList")
-    public List<Category> getCategoryList()
+    public Result getCategoryList()
     {
-        return categoryService.getCategoryList();
+        return Result.success(categoryService.getCategoryList());
     }
     @RequestMapping("/searchProductList")
-    public List<Category> searchProductList(String keywords)
+    public Result searchProductList(String keywords)
     {
-        return categoryService.searchProductList(keywords);
+        return Result.success(categoryService.searchProductList(keywords));
     }
 }

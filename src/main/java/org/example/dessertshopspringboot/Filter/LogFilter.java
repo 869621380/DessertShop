@@ -22,6 +22,7 @@ public class LogFilter implements Filter {
 
 
         logger.info("用户请求路径: {}, 客户端IP: {}, 请求方法: {}", requestURI, clientIP, method);
+
         // 继续处理请求
         chain.doFilter(request, response);
     }

@@ -23,6 +23,6 @@ public class Order {
     private String status;
     private String paymentStatus;
     private List<CartItem> cartItem;
-    @JsonFormat(pattern = "yyyy-mm-dd hh:mm:ss")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
 }

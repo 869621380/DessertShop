@@ -16,7 +16,7 @@ public interface CategoryMapper {
     @Select("SELECT id,name, price, description,imgURl FROM CATEGORY WHERE id = #{id}")
     public Category getCategoryById(int id) ;
 
-    @Select("select * from category ")
+    @Select("select * from category where status = 1")
     List<Category> getCategoryList();
 
     @Select("select * from category where id = #{id}")

@@ -21,11 +21,13 @@ public class SellerOrderController {
     public Result<List<SellerOrder>> orders(){
         return Result.success(sellerOrderService.orders());
     }
+
     @PostMapping("/detail")
     public Result<List<SellerOrderDetail>> detail(@RequestParam("orderId") String orderId){
         List<SellerOrderDetail>detail=sellerOrderService.detail(orderId);
         return Result.success(detail);
     }
+
     @PostMapping("/dispatch")
     public Result dispatch(@RequestParam("orderId") String orderId){
         sellerOrderService.dispatch(orderId);

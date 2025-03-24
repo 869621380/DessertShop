@@ -2,6 +2,7 @@ package org.example.dessertshopspringboot.Domain;
 
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -29,6 +30,8 @@ public class Category {
     private Integer remain;
     @NotEmpty
     private String seller;
+    @JsonIgnore
+    private String status;
 
 
 }

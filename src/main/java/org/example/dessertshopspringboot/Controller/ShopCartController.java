@@ -49,6 +49,7 @@ public class ShopCartController {
     @PostMapping("/checkout")
     Result checkout(@RequestBody Map<String,Object> params){
         List<Map<String,Object>> list= (List) params.get("items");
+
         String username=ThreadLocalUtil.getUsername();
 
         try {
